@@ -83,16 +83,12 @@ async def get_current_user(
     )
 
     try:
-        print('🔐 Decoding token...')
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])  # <-- fixed here
-        print('✅ Payload:', payload)
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM]) 
         username = payload.get('sub')
         if username is None:
-            print('❌ Username missing in token')
             raise credentials_exception
         token_data = TokenData(username=username)
     except InvalidTokenError as e:
-        print('❌ InvalidTokenError:', e)
         raise credentials_exception
 
     user = await get_user(db, username=token_data.username)
