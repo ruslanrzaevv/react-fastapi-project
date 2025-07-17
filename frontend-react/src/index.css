@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&family=Titillium+Web&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+h3 {
+  margin-top: 1rem;
+}
+
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgb(77, 144, 171);
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-inner{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0; 
+    margin: 0;
+
+}
+
+
+.nav{
+  font-size: 19px;
+}
+
+
+.nav-link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: color .2s linear;
+}
+
+.nav-link:hover{
+  color: #91a8b6;;
+}
+
+.posts {
+  margin-top: 80px;
+  width: 100%;
+  align-items: center;
+}
+
+.posts img {
+  width: 600px;
+  height: auto;
+}
+
+.posts h3 {
+  font-size: 20px;
+  margin-left: -250px;
+}
+
+.posts-inner {
+  margin: 50px 0;
+
+}
+
+
+
+.header-logo {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  transition: color .2s linear;
+
+}
+
+.header-logo:hover {
+  color: #91a8b6;
+}
